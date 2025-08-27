@@ -1,0 +1,111 @@
+{
+  "Team_Maintenance": {
+    "Add_Team": [
+      {
+        "Team_Name": "Team C",
+        "Bussiness_Area": "FCO"
+      }
+    ],
+    "Update_Team": [
+      {
+        "Team_Name": "Team@Sel",
+        "Updated_Team_Name": "Team M"
+      }
+    ],
+    "Search_Team": [
+      {
+        "Team_Name": "check-Test",
+        "Duplicate_Team": "ANAN",
+        "Duplicate_BA": "Customer Relations",
+        "ChangeStatusTeam": "ANA_02"
+      }
+    ]
+  },
+  "Task_Maintenance": {
+    "Team_Name": "Team X",
+    "Core": [
+      {
+        "Add_Task": [
+          {
+            "Task_Name": "Task-Yuv",
+            "SubTask": [
+              {
+                "SubTask_Name": "Team-999",
+                "AverageHandling": "500"
+              }
+            ]
+          }
+        ],
+        "Update_Task": [
+          {
+            "Task_Name": "Testing20",
+            "SubTask": [
+              {
+                "SubTask_Name": "Sub",
+                "AverageHandling": "800"
+              }
+            ]
+          }
+        ],
+        "Duplicate_Task": {
+          "Task_Name": "Test09",
+          "SubTask": {
+            "SubTask_Name": "Team-999",
+            "AverageHandling": "900"
+          }
+        }
+      }
+    ],
+    "Diverted": [
+      {
+        "Task_Name": "Team Lead"
+      }
+    ],
+    "System_Down": [
+      {
+        "Task_Name": "System-Down"
+      }
+    ]
+  },
+  "Employee_Directory": {
+    "Search_Employee": [
+      {
+        "Employee_Name": "Aruna Shukla"
+      },
+      {
+        "Employee_Name": "KIRAN BANGALORE KRISHNAMURTHY"
+      },
+      {
+        "Employee_Name": "Haritha Gupta"
+      }
+    ]
+  },
+  "WorkIn": {
+    "unitArray": [
+      300,
+      100,
+      250,
+      100,
+      150,
+      200,
+      10,
+      20,
+      90,
+      110
+    ],
+    "modifiedUnitArray": [
+      10,
+      20,
+      90,
+      110,
+      300,
+      100,
+      250,
+      100,
+      150,
+      200
+    ],
+    "AddTeam": "ANAN",
+    "ModifiedTeam": "Team X"
+  }
+}

@@ -1,0 +1,76 @@
+{
+    "dyndata1": [
+        {
+            "googlesearch1": "blue",
+            "googlesearch2": "green",
+            "googlesearch3": "red"
+        },
+        {
+            "googlesearch1": "sky_blue",
+            "googlesearch2": "forest_green",
+            "googlesearch3": "brick_red"
+        },
+        {
+            "googlesearch1": "ocean_blue",
+            "googlesearch2": "apple_green",
+            "googlesearch3": "apple_red"
+        },
+        {
+            "googlesearch1": "medium_blue",
+            "googlesearch2": "light_green",
+            "googlesearch3": "light_red"
+        },
+        {
+            "googlesearch1": "savoy_blue",
+            "googlesearch2": "forest_green",
+            "googlesearch3": "cardinal_red"
+        },
+        {
+            "googlesearch1": "neon_blue",
+            "googlesearch2": "neon_green",
+            "googlesearch3": "flourescent_red"
+        },
+        {
+            "googlesearch1": "dark_blue",
+            "googlesearch2": "dark_green",
+            "googlesearch3": "dark_red"
+        }
+    ],
+    "dyndata2": [
+        {
+            "googlesearch1": "midnight_blue",
+            "googlesearch2": "midnight_green",
+            "googlesearch3": "indian_red"
+        },
+        {
+            "googlesearch1": "navy_blue",
+            "googlesearch2": "bright_green",
+            "googlesearch3": "imperial_red"
+        },
+        {
+            "googlesearch1": "egyptian_blue",
+            "googlesearch2": "jungle_green",
+            "googlesearch3": "rusty_red"
+        },
+        {
+            "googlesearch1": "international_klein_blue",
+            "googlesearch2": "british_racing_green",
+            "googlesearch3": "fire_engine_red"
+        },
+        {
+            "googlesearch1": "blue_bonnet",
+            "googlesearch2": "chartreuse",
+            "googlesearch3": "redwood"
+        },
+        {
+            "googlesearch1": "ultramarine",
+            "googlesearch2": "aquamarine",
+            "googlesearch3": "crimson"
+        },
+        {
+            "googlesearch1": "periwinkle",
+            "googlesearch2": "viridian",
+            "googlesearch3": "maroon"
+        }
+    ]
+}

@@ -1,0 +1,189 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 1,
+    "pending": 0,
+    "failures": 3,
+    "start": "2023-06-26T07:06:42.885Z",
+    "end": "2023-06-26T07:07:34.248Z",
+    "duration": 51363,
+    "testsRegistered": 4,
+    "passPercent": 25,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "24e6d971-b774-4044-b0e9-885341ab5a62",
+      "title": "",
+      "fullFile": "/home/i-exceed.com/abhiroop.kumar/Documents/Selenium_JavaScript/WFM/employeeDirectory.js",
+      "file": "/WFM/employeeDirectory.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "26f0ad3d-b680-4d63-9bea-39fe70541af2",
+          "title": "Employee Directory Screen : ",
+          "fullFile": "/home/i-exceed.com/abhiroop.kumar/Documents/Selenium_JavaScript/WFM/employeeDirectory.js",
+          "file": "/WFM/employeeDirectory.js",
+          "beforeHooks": [],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Employee Directory Screen : \"",
+              "fullTitle": "Employee Directory Screen :  \"after all\" hook in \"Employee Directory Screen : \"",
+              "timedOut": false,
+              "duration": 61,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "78e3acb7-e0c5-4546-bf10-bdcf0facf0b3",
+              "parentUUID": "26f0ad3d-b680-4d63-9bea-39fe70541af2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Load WFM URL",
+              "fullTitle": "Employee Directory Screen :  Load WFM URL",
+              "timedOut": false,
+              "duration": 23154,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.manage().window().maximize();\nawait driver.manage().setTimeouts({ implicit: 10000 });\nawait driver.get(login.url);\nawait driver.findElement(By.name(\"loginfmt\")).sendKeys(login.User_id);\nawait driver.findElement(By.id(\"idSIButton9\")).click();\nawait driver.findElement(By.name(\"passwd\")).sendKeys(login.password);\nawait driver.findElement(By.xpath(\"//input[@value='Sign in']\")).click();\nawait driver.sleep(15000);\nlet urlText = await driver.getTitle().then(function (value) {\n    return value;\n});\nassert.strictEqual(urlText, 'WFMApp');",
+              "err": {},
+              "uuid": "fa9d777f-c4c2-4c8f-80b4-00d0aa43c044",
+              "parentUUID": "26f0ad3d-b680-4d63-9bea-39fe70541af2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify employee details for user - 'Aruna'",
+              "fullTitle": "Employee Directory Screen :  Verify employee details for user - 'Aruna'",
+              "timedOut": false,
+              "duration": 9673,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.findElement(By.id(\"lndapp__Landing__empDirectoryMenu_txtcnt\")).click();\nawait driver.sleep(5000);\nawait driver.findElement(By.id(\"empdir__EmployeeDirectory__searchValue\")).click();\nawait driver.findElement(By.id(\"empdir__EmployeeDirectory__searchValue\")).sendKeys(element.Employee_Name);\nawait driver.sleep(2000);\nawait driver.findElement(By.id(\"empdir__EmployeeList__o__empdir__EmployeeList_Res__fullName_0_txtcnt\")).click();\nawait driver.findElement(By.id(\"empdir__ReportingTo__reportingName_txtcnt\")).click();\nawait driver.findElement(By.css(\".ok\")).click();\nawait driver.sleep(500);\nlet verifyText = await driver.findElement(By.id(\"empdir__EmployeeDetails__empName_txtcnt\")).getText()\n// console.log(verifyText);\ntry{\n    assert.strictEqual(verifyText, element.Employee_Name);\n} catch{\n    assert.ifError('Employee Directory screen verification has failed');\n}\nawait driver.findElement(By.css(\"#empdir__EmployeeDetails__el_icn_2 > use\")).click();\n//Generate screenshot\nlet encodedString = await driver.takeScreenshot();\nfs.writeFileSync('/home/i-exceed.com/abhiroop.kumar/Documents/Selenium_JavaScript/Screenshots/employeeDirectory.png', encodedString, 'base64');\nconsole.log(\"Employee Directory screenshot is generated\");",
+              "err": {
+                "message": "AssertionError: ifError got unwanted exception: 'Employee Directory screen verification has failed'",
+                "estack": "AssertionError [ERR_ASSERTION]: ifError got unwanted exception: 'Employee Directory screen verification has failed'\n    at Context.<anonymous> (WFM/employeeDirectory.js:66:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "d23895e7-59bf-4946-a981-24cbd6654c4b",
+              "parentUUID": "26f0ad3d-b680-4d63-9bea-39fe70541af2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify employee details for user - 'Kiran'",
+              "fullTitle": "Employee Directory Screen :  Verify employee details for user - 'Kiran'",
+              "timedOut": false,
+              "duration": 9359,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.findElement(By.id(\"lndapp__Landing__empDirectoryMenu_txtcnt\")).click();\nawait driver.sleep(5000);\nawait driver.findElement(By.id(\"empdir__EmployeeDirectory__searchValue\")).click();\nawait driver.findElement(By.id(\"empdir__EmployeeDirectory__searchValue\")).sendKeys(element.Employee_Name);\nawait driver.sleep(2000);\nawait driver.findElement(By.id(\"empdir__EmployeeList__o__empdir__EmployeeList_Res__fullName_0_txtcnt\")).click();\nawait driver.findElement(By.id(\"empdir__ReportingTo__reportingName_txtcnt\")).click();\nawait driver.findElement(By.css(\".ok\")).click();\nawait driver.sleep(500);\nlet verifyText = await driver.findElement(By.id(\"empdir__EmployeeDetails__empName_txtcnt\")).getText()\n// console.log(verifyText);\ntry{\n    assert.strictEqual(verifyText, element.Employee_Name);\n} catch{\n    assert.ifError('Employee Directory screen verification has failed');\n}\nawait driver.findElement(By.css(\"#empdir__EmployeeDetails__el_icn_2 > use\")).click();\n//Generate screenshot\nlet encodedString = await driver.takeScreenshot();\nfs.writeFileSync('/home/i-exceed.com/abhiroop.kumar/Documents/Selenium_JavaScript/Screenshots/employeeDirectory.png', encodedString, 'base64');\nconsole.log(\"Employee Directory screenshot is generated\");",
+              "err": {
+                "message": "AssertionError: ifError got unwanted exception: 'Employee Directory screen verification has failed'",
+                "estack": "AssertionError [ERR_ASSERTION]: ifError got unwanted exception: 'Employee Directory screen verification has failed'\n    at Context.<anonymous> (WFM/employeeDirectory.js:66:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "855ec121-c522-4321-a548-edec8aa9550f",
+              "parentUUID": "26f0ad3d-b680-4d63-9bea-39fe70541af2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify employee details for user - 'Haritha'",
+              "fullTitle": "Employee Directory Screen :  Verify employee details for user - 'Haritha'",
+              "timedOut": false,
+              "duration": 9090,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.findElement(By.id(\"lndapp__Landing__empDirectoryMenu_txtcnt\")).click();\nawait driver.sleep(5000);\nawait driver.findElement(By.id(\"empdir__EmployeeDirectory__searchValue\")).click();\nawait driver.findElement(By.id(\"empdir__EmployeeDirectory__searchValue\")).sendKeys(element.Employee_Name);\nawait driver.sleep(2000);\nawait driver.findElement(By.id(\"empdir__EmployeeList__o__empdir__EmployeeList_Res__fullName_0_txtcnt\")).click();\nawait driver.findElement(By.id(\"empdir__ReportingTo__reportingName_txtcnt\")).click();\nawait driver.findElement(By.css(\".ok\")).click();\nawait driver.sleep(500);\nlet verifyText = await driver.findElement(By.id(\"empdir__EmployeeDetails__empName_txtcnt\")).getText()\n// console.log(verifyText);\ntry{\n    assert.strictEqual(verifyText, element.Employee_Name);\n} catch{\n    assert.ifError('Employee Directory screen verification has failed');\n}\nawait driver.findElement(By.css(\"#empdir__EmployeeDetails__el_icn_2 > use\")).click();\n//Generate screenshot\nlet encodedString = await driver.takeScreenshot();\nfs.writeFileSync('/home/i-exceed.com/abhiroop.kumar/Documents/Selenium_JavaScript/Screenshots/employeeDirectory.png', encodedString, 'base64');\nconsole.log(\"Employee Directory screenshot is generated\");",
+              "err": {
+                "message": "AssertionError: ifError got unwanted exception: 'Employee Directory screen verification has failed'",
+                "estack": "AssertionError [ERR_ASSERTION]: ifError got unwanted exception: 'Employee Directory screen verification has failed'\n    at Context.<anonymous> (WFM/employeeDirectory.js:66:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "0a4a1cbb-e22b-4b4d-a56a-7e9aa367c8dd",
+              "parentUUID": "26f0ad3d-b680-4d63-9bea-39fe70541af2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fa9d777f-c4c2-4c8f-80b4-00d0aa43c044"
+          ],
+          "failures": [
+            "d23895e7-59bf-4946-a981-24cbd6654c4b",
+            "855ec121-c522-4321-a548-edec8aa9550f",
+            "0a4a1cbb-e22b-4b4d-a56a-7e9aa367c8dd"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 51276,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

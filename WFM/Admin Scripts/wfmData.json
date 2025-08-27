@@ -1,0 +1,29 @@
+{
+    "uS": [
+        {
+            "emailidApp": "Appointment Booking",
+            "search1": "abhiroop.kumar@i-exceed.com",
+            "search2": "yuvraj.singh@i-exceed.com"
+        },
+        {
+            "emailidApp": "WFM Ops",
+            "search1": "abhiroop.kumar@i-exceed.com",
+            "search2": "yuvraj.singh@i-exceed.com"
+        },
+        {
+            "emailidApp": "WFM Branch",
+            "search1": "abhiroop.kumar@i-exceed.com",
+            "search2": "yuvraj.singh@i-exceed.com"
+        },
+        {
+            "emailidApp": "Leads",
+            "search1": "abhiroop.kumar@i-exceed.com",
+            "search2": "yuvraj.singh@i-exceed.com"
+        },
+        {
+            "emailidApp": "CSS",
+            "search1": "abhiroop.kumar@i-exceed.com",
+            "search2": "yuvraj.singh@i-exceed.com"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "selenium_javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NOW=$(date \"+%F_%T\") && mocha --no-timeouts --reporter mochawesome --reporter-options reportDir=testReports,reportFilename=reportFile-${NOW}"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^113.0.0",
+    "edgedriver": "^5.2.1",
+    "geckodriver": "^4.0.0",
+    "mochawesome": "^7.1.3",
+    "selenium-webdriver": "^4.9.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "mocha-param": "^2.0.1"
+  }
+}
